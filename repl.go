@@ -5,6 +5,7 @@ import (
   "bufio"
   "os"
   "strings"
+
   "github.com/venu-prasath/pokedex-go-cli/internal/pokeapi"
 )
 
