@@ -11,5 +11,6 @@ func main() {
 	cfg := &config{
 		pokeapiClient: pokeClient,
 	}
+
 	startRepl(cfg)
 }
