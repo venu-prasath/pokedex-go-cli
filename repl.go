@@ -10,9 +10,9 @@ import (
 )
 
 type config struct {
-	pokeapiClient       pokeapi.Client
 	nextLocationUrl     *string
 	previousLocationUrl *string
+	pokeapiClient       pokeapi.Client
 }
 
 func startRepl(cfg *config) {
@@ -49,9 +49,9 @@ func cleanInput(text string) []string {
 }
 
 type cliCommand struct {
+	callback    func(*config) error
 	name        string
 	description string
-	callback    func(*config) error
 }
 
 func getCommands() map[string]cliCommand {

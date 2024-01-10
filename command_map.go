@@ -21,7 +21,7 @@ func commandMapf(cfg *config) error {
 
 func commandMapb(cfg *config) error {
 	if cfg.previousLocationUrl == nil {
-		return errors.New("You are already on the first page")
+		return errors.New("you are already on the first page")
 	}
 
 	locationsResp, err := cfg.pokeapiClient.ListLocations(cfg.previousLocationUrl)
