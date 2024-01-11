@@ -23,6 +23,7 @@ func startRepl(cfg *config) {
 
 		words := cleanInput(scanner.Text())
 		if len(words) == 0 {
+			fmt.Println("Incorrect input. Type help for help")
 			continue
 		}
 		commandName := words[0]
